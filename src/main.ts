@@ -7,7 +7,7 @@ async function bootstrap() {
     AppModule, {
     transport: Transport.RMQ,
     options: {
-      urls: ['amqp://localhost:5672'],
+      urls: ['amqp://rabbitmq:5672'],
       queue: 'spreadsheet_exchange',
       queueOptions: {
         durable: false
